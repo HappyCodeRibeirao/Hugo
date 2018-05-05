@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>297hr5be6vmk9</unique-id>
+    <saved-with-version>24400</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1708</width>
+        <height>960</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="fundo" sid="148001097578821">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="394223790234738" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="caindo" sid="694769973688590">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695535659907602" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503759" original-source="C:\Users\Happy Code\Desktop\caindo.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Vovo" sid="773420765135758">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="debug" sid="961278122974241" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="862852264476265">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="1" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="476773112602051" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\000.png">
+                        <collision-poly>
+                            <point x="0.327093" y="0.322687" />
+                            <point x="0.667401" y="0.323789" />
+                            <point x="0.669604" y="0.69163" />
+                            <point x="0.328194" y="0.687225" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="movendo" pingpong="0" repeatcount="1" repeatto="0" sid="953285085550924" speed="5">
+                    <frame duration="1" hotspotX="0.500763" hotspotY="0.500763" original-source="C:\Users\Happy Code\Desktop\001.png">
+                        <collision-poly>
+                            <point x="0.238168" y="0.274809" />
+                            <point x="0.69771" y="0.247328" />
+                            <point x="0.743511" y="0.746565" />
+                            <point x="0.280916" y="0.780153" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\002.png">
+                        <collision-poly>
+                            <point x="0.347607" y="0.264484" />
+                            <point x="0.712846" y="0.345088" />
+                            <point x="0.65995" y="0.738035" />
+                            <point x="0.277078" y="0.680101" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mlkCaindo" sid="133259063424661">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="504753383111916">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="103473579040950" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503759" original-source="C:\Users\Happy Code\Desktop\caindo.jpg">
+                        <collision-poly>
+                            <point x="0.0025" y="0.93233" />
+                            <point x="1" y="0.93233" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="balaDaVovo" sid="842407460926669">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="544185952948900">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="241685958918800" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Happy Code\Desktop\download.jpg">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="995697837499343">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="inimigo" sid="133486057090040">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="886272910647855">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="975202249592936" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50084" original-source="C:\Users\Happy Code\Desktop\irmaos-camiseta.jpg">
+                        <collision-poly>
+                            <point x="0.146377" y="0" />
+                            <point x="0.836231" y="0" />
+                            <point x="0.83913" y="1" />
+                            <point x="0.13913" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pedrinhaKawaii" sid="412780557449298">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="177393133478850">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294220695381811" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.184" y="0.652001" />
+                            <point x="0.84" y="0.464" />
+                            <point x="0.872" y="0.844" />
+                            <point x="0.18" y="0.804" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="958321370314826">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="556583876505091" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="soUmaMoita" sid="668988754550273">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509214307015714" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chao" sid="953895724357065">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="386382560870295">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="709148450822393" speed="5">
+                    <frame duration="1" hotspotX="0.496" hotspotY="0.696">
+                        <collision-poly>
+                            <point x="0.004" y="0.676" />
+                            <point x="0.996" y="0.652" />
+                            <point x="0.984" y="0.704" />
+                            <point x="0.004" y="0.724" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nuvem" sid="483784585412535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="144284646437379" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.816" y="0.338" />
+                            <point x="0.114" y="0.458999" />
+                            <point x="0.136" y="0.328" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="paredeInvisivel" sid="604311222689794">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141211959875169" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.12" y="0" />
+                            <point x="0.136" y="0" />
+                            <point x="0.12" y="0.992" />
+                            <point x="0.1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="castelo" sid="606664234313858">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277944289542881" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\castelo.jpg">
+                        <collision-poly>
+                            <point x="0.351429" y="0.625" />
+                            <point x="0.557142" y="0.575" />
+                            <point x="0.62" y="0.920833" />
+                            <point x="0.325714" y="0.883333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="819138180103654">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="399304553477209" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\casasbahia.jpg">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pidodaMinhaVo" sid="221623863143905">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="265628778037664">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235584723940729" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\Happy Code\Desktop\pisoda minha vo.jpg">
+                        <collision-poly>
+                            <point x="0" y="0.511111" />
+                            <point x="1" y="0.502222" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tv" sid="623241006826226">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="610373628694299">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="832805523927071" speed="5">
+                    <frame duration="1" hotspotX="0.501832" hotspotY="0.502703" original-source="C:\Users\Happy Code\Desktop\TV.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Sprite2" sid="307181098106646">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="151041705169214" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Program Files\Construct 2\construct2.png">
+                        <collision-poly>
+                            <point x="0.210938" y="0.210938" />
+                            <point x="0.5" y="0.0078125" />
+                            <point x="0.394531" y="0.605469" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.828125" y="0.828125" />
+                            <point x="0.5" y="0.988281" />
+                            <point x="0.214844" y="0.785156" />
+                            <point x="0.109375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="score" sid="886077728041847">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="pontuacao" sid="987675203710624" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="geladeira" sid="136691442161962">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="297605481511381">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161468046136719" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Happy Code\Desktop\geladeira2.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

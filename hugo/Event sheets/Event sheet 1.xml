@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-group description="" sid="188066653570895" title="Heroi">
+            <sub-events>
+                <event-block sid="802168964368139">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="293813527125902" type="balaDaVovo">
+                            <param id="0" name="Object">inimigo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="220396150920311" type="inimigo" />
+                        <action id="-9" name="Destroy" sid="202866329612957" type="balaDaVovo" />
+                        <action id="-11" name="Add to" sid="888008409599289" type="score">
+                            <param id="0" name="Instance variable">pontuacao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="316904488069206" type="score">
+                            <param id="0" name="Text">&quot;score: &quot; &amp; score.pontuacao</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="985109832915567">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="741637177259689" type="balaDaVovo">
+                            <param id="0" name="Object">pedrinhaKawaii</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="227659876167322" type="balaDaVovo" />
+                    </actions>
+                </event-block>
+                <event-block sid="156860166153063">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="322846144143860" type="System">
+                            <param id="0" name="First value">Vovo.Platform.VectorX</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="812039959485316" type="Vovo">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="585044443499679">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="583734699620907" type="System">
+                            <param id="0" name="First value">Vovo.Platform.VectorX</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="400707599811769" type="Vovo">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="358389087145097">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="533390494801901" type="Keyboard">
+                            <param id="0" name="Key">70</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="986211910502217" type="Vovo">
+                            <param id="0" name="Object">balaDaVovo</param>
+                            <param id="1" name="Layer">&quot;Layer 1&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="506801595741442">
+                            <conditions>
+                                <condition id="7" name="Is mirrored" sid="884617161172810" type="Vovo" />
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="397370344309107" type="balaDaVovo">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="614907421203910">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Is mirrored" sid="765914192729282" type="Vovo" />
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="477851381024263" type="balaDaVovo">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="357557467300642">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="565597445695152" type="System">
+                            <param id="0" name="First value">Vovo.Platform.VectorX</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="859555451937473" type="Vovo">
+                            <param id="0" name="Animation">&quot;movendo&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="337515029927580">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="809483128178434" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="279008102098235" type="Vovo">
+                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="974003535646049" title="inimigo">
+            <sub-events>
+                <event-block sid="137087275890492">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="441393696407180" type="inimigo">
+                            <param id="0" name="Object">Vovo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="668115874740420" type="Vovo" />
+                    </actions>
+                </event-block>
+                <event-block sid="381083936816919">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="421114360791393" type="inimigo">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">Vovo.X</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="722375550361797" type="inimigo">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="130019661577520">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="541267637107011" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="805042124809303" type="inimigo">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="750800276578990">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="544128549844474" type="Vovo">
+                            <param id="0" name="Object">castelo</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="809278184023874" type="System">
+                            <param id="0" name="Layout">Layout 2</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="650473155384863" type="Vovo">
+                            <param id="0" name="X">187</param>
+                            <param id="1" name="Y">828</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
